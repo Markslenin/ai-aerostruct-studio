@@ -1,0 +1,31 @@
+{
+  "project_name": "demo_trapezoidal_wing",
+  "geometry": {
+    "wing_type": "trapezoidal",
+    "span_m": 1.2,
+    "root_chord_m": 0.24,
+    "tip_chord_m": 0.14,
+    "thickness_m": 0.012,
+    "sweep_deg": 5,
+    "dihedral_deg": 3,
+    "airfoil": "NACA2412"
+  },
+  "aero": {
+    "velocity_mps": 30,
+    "air_density_kg_m3": 1.225,
+    "alpha_deg": 6,
+    "target_lift_N": 120
+  },
+  "material": {
+    "name": "7075-T6 Aluminum",
+    "elastic_modulus_pa": 71700000000,
+    "yield_strength_pa": 505000000,
+    "density_kg_m3": 2810
+  },
+  "structure": {
+    "safety_factor_min": 1.5,
+    "max_deflection_m": 0.002,
+    "spar_height_m": 0.02,
+    "spar_width_m": 0.003
+  }
+}
