@@ -116,6 +116,7 @@ ai-aerostruct-studio/
 │       ├── schemas/
 │       └── skills/
 ├── docs/
+│   └── RESEARCH_ROADMAP.md
 ├── examples/
 └── tests/
 ```
@@ -160,6 +161,34 @@ python examples/run_demo.py
 | 校核 | Python 规则 | 更完整的规则引擎 |
 | 前端 | 暂无 | Streamlit |
 | 知识库 | 暂无 | RAG |
+| 数据集 | 暂无 | 自动生成翼面设计样本 |
+| 推荐模型 | 暂无 | Surrogate / Recommender |
+
+---
+
+## 研究路线
+
+除工程实现路线外，本项目保留一条长期研究路线：
+
+```text
+参数化设计
++ 3D 几何生成
++ 气动/结构快速校核
++ 自动数据集生成
++ Surrogate 尺寸推荐
++ 仿真闭环自训练
++ 物理约束自进化设计 Agent
+```
+
+短期目标是完成低速翼面初步设计 demo；中期目标是形成可发表的仿真闭环尺寸推荐方法；长期探索方向是：
+
+```text
+PG-SEDA: Physics-Grounded Self-Evolving Design Agent
+```
+
+即通过物理仿真、失败原因反馈、主动学习和多保真校核，使模型逐步学会生成可验证的工程设计候选。
+
+详细规划见：[`docs/RESEARCH_ROADMAP.md`](docs/RESEARCH_ROADMAP.md)。
 
 ---
 
